@@ -1,0 +1,3 @@
+Bundle-Name: override-layout-seo-service
+Bundle-SymbolicName: com.liferay.custom
+Bundle-Version: 1.0.0

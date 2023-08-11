@@ -1,0 +1,11 @@
+Bundle-Name: layout-seo-service-fragment
+Bundle-SymbolicName: layout.seo.service.fragment
+Bundle-Version: 1.0.0
+Fragment-Host: com.liferay.layout.seo.service;bundle-version="3.0.43"
+Export-Package:\
+	com.liferay.layout.seo.internal,\
+	com.liferay.layout.seo.internal.util,\
+	com.liferay.layout.seo.internal.configuration
+Liferay-Require-SchemaVersion: 2.2.0
+Liferay-Service: true
+-dsannotations-options: inherit
