@@ -1,0 +1,5 @@
+Bundle-Name: custom-portlet
+Bundle-SymbolicName: custom.portlet
+Bundle-Version: 1.0.0
+Export-Package: custom.portlet.constants
+-noee=true
