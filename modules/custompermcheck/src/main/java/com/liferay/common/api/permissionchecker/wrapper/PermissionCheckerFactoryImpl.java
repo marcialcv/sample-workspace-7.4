@@ -1,9 +1,9 @@
-package com.euromadi.common.api.permissionchecker.wrapper;
+package com.liferay.common.api.permissionchecker.wrapper;
 
-import com.euromadi.common.api.permissionchecker.CustomDataPermissionCheckerWrapper;
-import com.liferay.document.library.kernel.service.DLFileEntryLocalService;
+import com.liferay.common.api.permissionchecker.CustomDataPermissionCheckerWrapper;
 import com.liferay.portal.kernel.security.permission.PermissionChecker;
 import com.liferay.portal.kernel.security.permission.wrapper.PermissionCheckerWrapperFactory;
+import com.liferay.portal.kernel.service.LayoutLocalService;
 
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
@@ -23,10 +23,10 @@ public class PermissionCheckerFactoryImpl
 		PermissionChecker permissionChecker) {
 
 		return new CustomDataPermissionCheckerWrapper(
-			permissionChecker, _dlFileEntryLocalService);
+			permissionChecker, _layoutLocalService);
 	}
 
 
 	@Reference
-	private DLFileEntryLocalService _dlFileEntryLocalService;
+	private LayoutLocalService _layoutLocalService;
 }
