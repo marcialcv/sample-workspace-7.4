@@ -33,7 +33,7 @@ public class CustomDataPermissionCheckerWrapper extends PermissionCheckerWrapper
     	if (serviceContext != null) {
     	    HttpServletRequest request = serviceContext.getRequest();
     	    HttpSession session = request.getSession();
-    	    // Ahora tienes acceso a la sesión
+    	    // acceso a la sesión
     	    System.out.println("ID de sesión: " + session.getId());
     	    if(session.getAttribute("accessLevel") != null) {
     	    	System.out.println("recupero de sesion "+ (long) session.getAttribute("accessLevel"));
