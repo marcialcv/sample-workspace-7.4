@@ -1,0 +1,3 @@
+Bundle-Name: override-navigation-product-menu-impl
+Bundle-SymbolicName: com.liferay.custom
+Bundle-Version: 1.0.0
